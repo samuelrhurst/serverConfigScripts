@@ -9,10 +9,10 @@ rvm install 2.3.1
 gem update --system
 gem install bundler
 #Node
-# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | bash
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-# nvm install 6.1
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm install 6.1
 # #SphinxSearch
 # sudo apt-get install -y sphinxsearch
 # #ImageMagick
