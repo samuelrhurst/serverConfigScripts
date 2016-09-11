@@ -13,7 +13,8 @@ nvm install 6.1
 sudo apt-get install -y sphinxsearch
 sudo apt-get install -y imagemagick
 sudo apt-get install -y mysql-server-5.6
-sudo apt-get install libmysqlclient-dev (needed for mysql2 gem)
+#libmysqlclient-dev is needed for the mysql2 gem
+sudo apt-get install libmysqlclient-dev
 git clone git://github.com/sharetribe/sharetribe.git
 cd sharetribe
 bundle install
