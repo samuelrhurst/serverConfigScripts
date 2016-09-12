@@ -13,16 +13,16 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | b
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 nvm install 6.1
-# #SphinxSearch
-# sudo apt-get install -y sphinxsearch
-# #ImageMagick
-# sudo apt-get install -y imagemagick
-# #MySQL (libmysqlclient-dev is needed for the mysql2 gem)
-# sudo apt-get install -y mysql-server-5.6
-# sudo apt-get install -y libmysqlclient-dev
+#SphinxSearch
+sudo apt-get install -y sphinxsearch
+#ImageMagick
+sudo apt-get install -y imagemagick
+#MySQL (libmysqlclient-dev is needed for the mysql2 gem)
+sudo apt-get install -y mysql-server-5.6
+sudo apt-get install -y libmysqlclient-dev
 # #Sharetribe Installation
 # #=======================
-# cd ~
-# git clone git://github.com/sharetribe/sharetribe.git
-# cd sharetribe
-# bundle install
+cd ~
+git clone git://github.com/sharetribe/sharetribe.git
+cd sharetribe
+bundle install
