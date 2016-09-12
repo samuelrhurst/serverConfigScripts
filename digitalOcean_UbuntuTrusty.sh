@@ -1,6 +1,7 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install -y git
+apt-get update
+apt-get upgrade
+apt-get install -y git
 #Ruby
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io  | bash -s stable
@@ -14,12 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 nvm install 6.1
 #SphinxSearch
-sudo apt-get install -y sphinxsearch
+apt-get install -y sphinxsearch
 #ImageMagick
-sudo apt-get install -y imagemagick
+apt-get install -y imagemagick
 #MySQL (libmysqlclient-dev is needed for the mysql2 gem)
-sudo apt-get install -y mysql-server-5.6
-sudo apt-get install -y libmysqlclient-dev
+apt-get install -y mysql-server-5.6
+apt-get install -y libmysqlclient-dev
 # #Sharetribe Installation
 # #=======================
 cd ~
