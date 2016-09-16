@@ -31,7 +31,7 @@ sudo apt-get install -y imagemagick
 # #Sharetribe Installation
 # #=======================
 cd ~
-git clone git://github.com/sharetribe/sharetribe.git
+git clone --branch v5.11.0 --depth 1 git://github.com/sharetribe/sharetribe.git
 cd sharetribe
 bundle install
 # npm install --unsafe-perm
