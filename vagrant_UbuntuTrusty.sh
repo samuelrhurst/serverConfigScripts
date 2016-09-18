@@ -1,13 +1,13 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get upgrade -y
+apt-get update
+apt-get upgrade -y
 #MySQL (libmysqlclient-dev is needed for the mysql2 gem)
 #-------------------------------------------------------
-sudo apt-get install -y mysql-server-5.6
+apt-get install -y mysql-server-5.6
 # apt-get install -y libmysqlclient-dev
 #Git
 #---
-sudo apt-get install -y git
+apt-get install -y git
 #Ruby
 #----
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
@@ -22,11 +22,15 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | b
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 nvm install 6.1
+#Copy the version of node you just installed to /usr/local so all users can access it
+n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
 #apt-get install -y build-essential
 #SphinxSearch
-sudo apt-get install -y sphinxsearch
+#------------
+apt-get install -y sphinxsearch
 #ImageMagick
-sudo apt-get install -y imagemagick
+#------------
+apt-get install -y imagemagick
 
 # #Sharetribe Installation
 # #=======================
